@@ -1,81 +1,17 @@
-/* .container {
-  box-sizing: border-box;
-  width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  max-width: 96rem;
-  margin-top: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 5.7rem;
-}
-.row1 {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 !important;
-}
-
-.col-sm-6 {
-  text-align: center !important;
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
-  border-radius: red;
-}
-
-.p-names {
-  cursor: pointer;
-  line-height: 1.618;
-  box-sizing: border-box;
-  font-size: 1.8rem;
-  display: block;
-  padding-top: 0.5rem;
-  padding-right: 0.3rem;
-  padding-bottom: 0rem;
-  padding-left: 0;
-  position: relative;
-  width: 100%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: #484848;
-  margin-bottom: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-width: 0 0.1rem 0 0.1rem;
-  border-radius: 0;
-  font-weight: bold;
-  height: 6rem !important;
-  margin-top: -6rem !important;
-} */
-
-/* .col-sm-6 {
-  padding: 1rem;
-  background-color: blueviolet;
-  border: 2px solid;
-  color: wheat;
-  text-align: center;
-} */
-
 .container {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
-  gap: 0px 0px;
+  gap: 0.75rem;
   grid-auto-flow: row;
+  padding-top: 0.75rem;
 }
 
 .block1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 0.75rem;
   grid-auto-flow: row;
   grid-template-areas: "sq1 sq2";
   grid-area: 1 / 1 / 2 / 2;
@@ -89,7 +25,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
+  gap: 0.75rem;
   grid-auto-flow: row;
   grid-template-areas:
     "box1 box2"
@@ -117,7 +53,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 0.75rem;
   grid-auto-flow: row;
   grid-template-areas: "sq3 sq4";
   grid-area: 2 / 1 / 3 / 2;
@@ -127,7 +63,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
+  gap: 0.75rem;
   grid-auto-flow: row;
   grid-template-areas:
     "box5 box6"
@@ -159,7 +95,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 0.75rem;
   grid-auto-flow: row;
   grid-template-areas: "box9 box10 box11 box12";
   grid-area: 3 / 1 / 4 / 2;
@@ -182,39 +118,122 @@
 }
 
 body {
-  /* width: 100%; */
-  /* min-height: 100vh; */
-
+  width: 100%;
+  min-height: 100vh;
   margin: 0;
-
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(223, 223, 223);
+  display: grid;
 }
 
-#cont {
-  perspective: 10px;
-  height: 100%;
-}
-#inner {
+#content {
   height: 100%;
   width: 100%;
-  padding: 10px;
-  transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
-  /* box-shadow: 2px 2px 50px rgba(255, 0, 0, 0.2); */
+  min-width: 100%;
+}
+#img {
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  border-radius: 10px;
 }
 
-#cont1 {
-  perspective: 10px;
-  height: 100%;
+.block3 {
+  max-height: 50%;
+  min-width: 100%;
 }
-#inner1 {
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-  transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
-  /* box-shadow: 2px 2px 50px rgba(255, 0, 0, 0.2); */
+
+/* HOVER TRANSITION START */
+
+.sq1 {
+  transition: 0.3s ease-in-out;
 }
+.sq1:hover {
+  transform: scale(1.02);
+}
+
+.sq4 {
+  transition: 0.3s ease-in-out;
+}
+.sq4:hover {
+  transform: scale(1.02);
+}
+
+.box1 {
+  transition: 0.3s ease-in-out;
+}
+.box1:hover {
+  transform: scale(1.04);
+}
+
+.box2 {
+  transition: 0.3s ease-in-out;
+}
+.box2:hover {
+  transform: scale(1.04);
+}
+
+.box3 {
+  transition: 0.3s ease-in-out;
+}
+.box3:hover {
+  transform: scale(1.04);
+}
+
+.box4 {
+  transition: 0.3s ease-in-out;
+}
+.box4:hover {
+  transform: scale(1.04);
+}
+.box5 {
+  transition: 0.3s ease-in-out;
+}
+.box5:hover {
+  transform: scale(1.04);
+}
+.box6 {
+  transition: 0.3s ease-in-out;
+}
+.box6:hover {
+  transform: scale(1.04);
+}
+.box7 {
+  transition: 0.3s ease-in-out;
+}
+.box7:hover {
+  transform: scale(1.04);
+}
+.box8 {
+  transition: 0.3s ease-in-out;
+}
+.box8:hover {
+  transform: scale(1.04);
+}
+.box9 {
+  transition: 0.3s ease-in-out;
+}
+.box9:hover {
+  transform: scale(1.04);
+}
+.box10 {
+  transition: 0.3s ease-in-out;
+}
+.box10:hover {
+  transform: scale(1.04);
+}
+.box11 {
+  transition: 0.3s ease-in-out;
+}
+.box11:hover {
+  transform: scale(1.04);
+}
+.box12 {
+  transition: 0.3s ease-in-out;
+}
+.box12:hover {
+  transform: scale(1.04);
+}
+
+/* HOVER TRANSITION END */
