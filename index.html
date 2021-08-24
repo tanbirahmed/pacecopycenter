@@ -10,92 +10,171 @@
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
         
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
         <title>PACE COPY CENTER</title>
      </head>
  <body>            
- <!----------------------- NAV BAR ------------------------->
- <!-- <div class="page-wrapper">
-    <div class="nav-wrapper">
-     <div class="grad-bar"></div>
-     <nav class="navbar">
-       <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Bluestar_%28bus_company%29_logo.svg/1280px-Bluestar_%28bus_company%29_logo.svg.png" alt="Company Logo">
-       <div class="menu-toggle" id="mobile-menu">
-         <span class="bar"></span>
-         <span class="bar"></span>
-         <span class="bar"></span>
-       </div>
-       <ul class="nav no-search">
-         <li class="nav-item"><a href="#">Home</a></li>
-         <li class="nav-item"><a href="#">About</a></li>
-         <li class="nav-item"><a href="#">Work</a></li>
-         <li class="nav-item"><a href="#">Careers</a></li>
-         <li class="nav-item"><a href="#">Contact Us</a></li>
-         <i class="fas fa-search" id="search-icon"></i>
-         <input class="search-input" type="text" placeholder="Search..">
-       </ul>
-     </nav>
-     </div>
-     <section class="headline">
+<!-- <----------------------- NAV BAR START -------------------------> 
+<nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">Pace Copy Center</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li>
+            <a href="#" class="desktop-item">All Products</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="img.jpg" alt="">
+                </div>
+                <div class="row">
+                  <header>Design Services</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Graphics</a></li>
+                    <li><a href="#">Vectors</a></li>
+                    <li><a href="#">Business cards</a></li>
+                    <li><a href="#">Custom logo</a></li>
+                    <li><a href="#">Custom logo</a></li>
+                    <li><a href="#">Custom logo</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Email Services</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Personal Email</a></li>
+                    <li><a href="#">Business Email</a></li>
+                    <li><a href="#">Mobile Email</a></li>
+                    <li><a href="#">Web Marketing</a></li>
+                    <li><a href="#">Web Marketing</a></li>
+                    <li><a href="#">Web Marketing</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Security services</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Site Seal</a></li>
+                    <li><a href="#">VPS Hosting</a></li>
+                    <li><a href="#">Privacy Seal</a></li>
+                    <li><a href="#">Website design</a></li>
+                    <li><a href="#">Website design</a></li>
+                    <li><a href="#">Website design</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="#" class="desktop-item">Dropdown Menu</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+          <ul class="drop-menu">
+            <li><a href="#">Drop menu 1</a></li>
+            <li><a href="#">Drop menu 2</a></li>
+            <li><a href="#">Drop menu 3</a></li>
+            <li><a href="#">Drop menu 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Feedback</a></li>
+        <a href="tel:9293419899"><img src="https://www.freeiconspng.com/uploads/phone-png-3.png" id="phone"></a>
+        <a href="mailto:pacecopycenter@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" id="email"></a>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+<!-- <----------------------- NAV BAR END -------------------------> 
+
+     <!-- <section class="headline">
        <h1>Responsive Navigation</h1>
        <p>Using CSS grid and flexbox to easily build navbars!</p>
      </section> -->
+
+     
      <section class="features">
        <div class="feature-containerLa"  id="hov">
          <img class="largeimg" src="https://printing.unitedwebmarketinggroup.com/wp-content/uploads/2020/10/Square-Business-Cards-Opt-2-1.jpg" alt="Flexbox Feature">
-         <h2 class="producttitle">MUGS</h2>
-         <p class="productprice" >Starting at $25.00</p>
+         <h2 class="producttitle">
+            <span class="largefont">MUGS</span><br>
+            <span class="smallfont">Starting at $25.00</span>
+         </h2>
+         <!-- <p class="productprice" >Starting at $25.00</p> -->
        </div>
        <div class="feature-containerSm">
             <div class="containerSm1" id="hov">
                 <img class="smallimg" src="https://printing.unitedwebmarketinggroup.com/wp-content/uploads/2020/10/Square-Business-Cards-Opt-2-1.jpg" alt="Flexbox Feature">
-                <h2 class="producttitle">1</h2>
-                <p class="productprice" >Starting at $25.00</p>
+                <h2 class="producttitle">
+                    <span class="largefont">MUGS</span><br>
+                    <span class="smallfont">Starting at $25.00</span>
+                 </h2>
             </div>
             <div class="containerSm2" id="hov">
                 <img class="smallimg" src="https://printing.unitedwebmarketinggroup.com/wp-content/uploads/2020/10/Square-Business-Cards-Opt-2-1.jpg" alt="Flexbox Feature">
-                <h2 class="producttitle">2</h2>
-                <p class="productprice" >Starting at $25.00</p>
+                <h2 class="producttitle">
+                    <span class="largefont">MUGS</span><br>
+                    <span class="smallfont">Starting at $25.00</span>
+                 </h2>
             </div>
             <div class="containerSm3" id="hov">
                 <img class="smallimg" src="https://printing.unitedwebmarketinggroup.com/wp-content/uploads/2020/10/Square-Business-Cards-Opt-2-1.jpg" alt="Flexbox Feature">
-                <h2 class="producttitle">3</h2>
-                <p class="productprice" >Starting at $25.00</p>
+                <h2 class="producttitle">
+                    <span class="largefont">MUGS</span><br>
+                    <span class="smallfont">Starting at $25.00</span>
+                 </h2>
             </div>
             <div class="containerSm4" id="hov">
                 <img class="smallimg" src="https://printing.unitedwebmarketinggroup.com/wp-content/uploads/2020/10/Square-Business-Cards-Opt-2-1.jpg" alt="Flexbox Feature">
-                <h2 class="producttitle">4</h2>
-                <p class="productprice" >Starting at $25.00</p>
+                <h2 class="producttitle">
+                    <span class="largefont">MUGS</span><br>
+                    <span class="smallfont">Starting at $25.00</span>
+                 </h2>
             </div>
        </div>
 
       <div class="feature-containerSm">
         <div class="containerSm5" id="hov">
             <img class="smallimg" src="https://printing.unitedwebmarketinggroup.com/wp-content/uploads/2020/10/Square-Business-Cards-Opt-2-1.jpg" alt="Flexbox Feature">
-            <h2 class="producttitle">5</h2>
-            <p class="productprice" >Starting at $25.00</p>
+            <h2 class="producttitle">
+                <span class="largefont">MUGS</span><br>
+                <span class="smallfont">Starting at $25.00</span>
+             </h2>
         </div>
         <div class="containerSm6" id="hov">
             <img class="smallimg" src="https://printing.unitedwebmarketinggroup.com/wp-content/uploads/2020/10/Square-Business-Cards-Opt-2-1.jpg" alt="Flexbox Feature">
-            <h2 class="producttitle">6</h2>
-            <p class="productprice" >Starting at $25.00</p>
+            <h2 class="producttitle">
+                <span class="largefont">MUGS</span><br>
+                <span class="smallfont">Starting at $25.00</span>
+             </h2>
         </div>
         <div class="containerSm7" id="hov">
             <img class="smallimg" src="https://printing.unitedwebmarketinggroup.com/wp-content/uploads/2020/10/Square-Business-Cards-Opt-2-1.jpg" alt="Flexbox Feature">
-            <h2 class="producttitle">7</h2>
-            <p class="productprice" >Starting at $25.00</p>
+            <h2 class="producttitle">
+                <span class="largefont">MUGS</span><br>
+                <span class="smallfont">Starting at $25.00</span>
+             </h2>
         </div>
         <div class="containerSm8" id="hov">
             <img class="smallimg" src="https://printing.unitedwebmarketinggroup.com/wp-content/uploads/2020/10/Square-Business-Cards-Opt-2-1.jpg" alt="Flexbox Feature">
-            <h2 class="producttitle">8</h2>
-            <p class="productprice" >Starting at $25.00</p>
+            <h2 class="producttitle">
+                <span class="largefont">MUGS</span><br>
+                <span class="smallfont">Starting at $25.00</span>
+             </h2>
         </div>
       </div>
       <div class="feature-containerLa" id="hov">
         <img class="largeimg" src="https://printing.unitedwebmarketinggroup.com/wp-content/uploads/2020/10/Square-Business-Cards-Opt-2-1.jpg" alt="Flexbox Feature">
-        <h2 class="producttitle">MUGS</h2>
-        <p class="productprice" >Starting at $25.00</p>
+        <h2 class="producttitle">
+            <span class="largefont">MUGS</span><br>
+            <span class="smallfont">Starting at $25.00</span>
+         </h2>
       </div>
+
+      
      </section>
 
 
